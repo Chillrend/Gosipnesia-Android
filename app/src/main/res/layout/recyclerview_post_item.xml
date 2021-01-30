@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="1.0">
+    <ImageView
+            android:id="@+id/post_thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:scaleType="centerCrop"
+            />
+    <LinearLayout
+            android:id="@+id/post_detail_wrapper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/post_parent_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Berita"
+                android:background="#f3ff"
+        />
+        <TextView
+                android:id="@+id/post_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="Merapi Erupsi Besar, Ganjar: Masyarakat Aman Karena Sebagian Besar Sudah Mengungsi"
+                android:ellipsize="end" />
+        <TextView
+                android:id="@+id/post_category_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="GO-NUSANTARA | 43 Minutes Ago"
+                />
+    </LinearLayout>
+
+</LinearLayout>
